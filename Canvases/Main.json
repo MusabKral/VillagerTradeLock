@@ -1,0 +1,60 @@
+{"children": [
+  {
+    "x": 288,
+    "y": 58,
+    "parameters": [{"value": "NORMAL"}],
+    "=": "com.gmail.visualbukkit.blocks.events.EvtVillagerAcquireTradeEvent"
+  },
+  {
+    "parameters": [],
+    "=": "com.gmail.visualbukkit.blocks.statements.StatCancelEvent"
+  },
+  {
+    "x": -131,
+    "y": 116,
+    "parameters": [{"value": "NORMAL"}],
+    "=": "com.gmail.visualbukkit.blocks.events.EvtVillagerReplenishTradeEvent"
+  },
+  {
+    "parameters": [],
+    "=": "com.gmail.visualbukkit.blocks.statements.StatCancelEvent"
+  },
+  {
+    "x": 92,
+    "y": 215,
+    "parameters": [],
+    "=": "com.gmail.visualbukkit.blocks.structures.StructPluginEnable"
+  },
+  {
+    "parameters": [
+      {
+        "expression": {"parameters": [{"value": "[VillagerTradeLock] &2Enabling!"}]},
+        "=": "com.gmail.visualbukkit.blocks.expressions.ExprString"
+      },
+      {
+        "expression": {"parameters": []},
+        "=": "com.gmail.visualbukkit.blocks.expressions.ExprConsole"
+      }
+    ],
+    "=": "com.gmail.visualbukkit.blocks.statements.StatSendMessage"
+  },
+  {
+    "x": 56,
+    "y": 272,
+    "parameters": [],
+    "=": "com.gmail.visualbukkit.blocks.structures.StructPluginDisable"
+  },
+  {
+    "parameters": [
+      {
+        "expression": {"parameters": [{"value": "[VillagerTradeLock] &4Disabling!"}]},
+        "=": "com.gmail.visualbukkit.blocks.expressions.ExprString"
+      },
+      {
+        "expression": {"parameters": []},
+        "=": "com.gmail.visualbukkit.blocks.expressions.ExprConsole"
+      }
+    ],
+    "=": "com.gmail.visualbukkit.blocks.statements.StatSendMessage"
+  }
+]}
